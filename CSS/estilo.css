@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Rubik+Storm&family=Ubuntu&display=swap');
+*{
+    /*reset*/
+    margin: 0;
+    padding: 0; 
+    font-family: 'Hubballi', cursive;
+    box-sizing: border-box;
+}
+
+    
+
+/*********************header***************************/
+.cabeza{
+    background-color:#FC88AC;  
+    font-family: 'Hubballi', cursive;
+    height: 24%;
+
+}
+.padreLogo{
+    width: 16%;
+    height: 50%;
+
+}
+.logo{    
+    width: 50%;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    background: rgba(254,214,227,0.3);
+    border: 3px solid #fed6e3;  
+    }
+.colornav{
+    color:rgb(255, 255, 255); 
+    font-weight: bold;
+    font-size: 180%;
+
+}
+
+/*****************************main*********************************/
+.color_de_fondo{
+    
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    
+}
+.divVideo{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter:brightness(100%);
+
+}
+
+.parrafoUno{
+    font-size: 2em;
+
+    
+}
+.color{
+    color:#FA3875;
+    font-size: 2em;
+
+}
+.colorBlanco{
+    color:azure;
+}
+
+
+
+.imgInicio{
+
+    width: 85%;
+    height: 40vh;
+    margin: 0 auto;
+    background: #0000001b;
+    border-radius: 18px 18px 18px 18px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border: 5px outset rgba(255,158,162,0.99);
+}
+.cImg{
+    width: 0%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: .5s ease;
+}
+.imgInicio Img:hover{
+    width: 15%;
+    opacity: 1;
+    filter:contrast(120%)
+}
+
+.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 35px; 
+    
+}
+.face{
+        background: radial-gradient(circle at 30% 107%, #3d9810 0%, #a097fd 5%, #1500ff 45%, #1500ff 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 35px; 
+}
+.whasa{
+    background: radial-gradient(circle at 30% 107%, #20af54 0%, #20af54 5%, #20af54 45%, #20af54 60%, #20af54 90%);
+    -webkit-background-clip: text;
+    
+            
+            background-clip: text;
+    -webkit-text-fill-color:#20af54;
+    
+    font-size: 35px; 
+}
+
+
+.hipervinculo1{
+    
+    list-style-type: none;      
+    text-decoration: none; 
+    font-size: 35px;
+}
+/*************************footer**********************************/
+.piedepagina{
+    background-image: linear-gradient(120deg, #fdafc8 ,#fdafc8,#fed6e3);
+    font-family: 'Hubballi', cursive;    
+
+
+    
+
+}
+.hiperMovimiento{
+    list-style-type: none;      
+}
+.hipervinculoFoot{
+    text-decoration: none; 
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.logo1{
+    width: 30%;
+    
+}
+
+
+
+
+/*******************************Galeria***************/
+/*Probando*/
+.galeriaimg{
+    height: 380px;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 28px 28px 28px 28px;
+    -webkit-border-radius: 28px 28px 28px 28px;
+    -moz-border-radius: 28px 28px 28px 28px;
+}
+.galeria{
+    text-align: center;
+    font-size: 200%;
+}
+
+.h2{
+    text-align: center;
+
+}
+.colorcard{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+/**************************Nosotros*********************************/
+/**/
+.parrafoNosotros{
+    font-size: 1em;
+    }
+
+
+
+
+
+/***********************media queris*********************/
+@media screen and (min-width :768px) and (max-width :991px)/*table*/{
+    .coPadrevide{
+        width: 50%;
+        margin: 0 auto;
+        margin: 30px auto;
+    }
+    .padreLogo{
+        width: 90%;
+        margin: 5%;
+    }
+    .colornav{
+
+        font-size: 2.1em;
+    
+    }
+
+
+}
+@media screen and (min-width: 0) and (max-width:768px) /*celular*/{
+
+    .padreLogo{
+        width: 30%;
+
+    }
+
+    
+    .logo{    
+        width:100%;
+
+        }
+    .colornav{
+
+        font-size: 1.3em;
+        margin-bottom: 1px;
+    
+    }
+    .margenN{
+    margin-left:2px;
+    }
+    .coPadrevide{
+        width: 60%;
+        margin: 28px auto;       
+    }   
+    .imgInicio Img:hover{
+        width: 50%;
+        opacity: 1;
+        filter:contrast(120%)
+    }
+    .hiperMovimiento{
+        text-align: center;
+    }
+    .logo1{
+        width: 30%;
+}
+}
