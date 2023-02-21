@@ -35,37 +35,41 @@
         </ul>  
         </nav>       
     </header >
-    <main class="color_de_fondo">
-        <h1>Contacto</h1>
-        <p>Para consultas o pedidos, llene el formulario y lo contactaremos a la brevedad.<br>
-            Teléfono: (+54) 9 11 3360 - 6547 | WhatsApp: (+54) 9 11 3360 - 6547<br>
+    <main class="container-fluid">
+        <div>
+            <video autoplay muted loop class="divVideo-nosotros">
+            <source src="../assets/video/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h1 class=" color font-h1 fontCont text-center p-3">Contacto</h1>
+        <p class="text-center parrafoNosotros">Para consultas o pedidos, llene el formulario y lo contactaremos a la brevedad.<br>
+            WhatsApp: (+54) 9 11 3360 - 6547<br>
             Nos encontramos en Rosetti 860,Villa Madero,Provincia de Buenos Aires, Argentina.<br>
             HORARIO: Lunes a Viernes de 9:30 a 17hs.</p>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6209567075484!2d-58.50023688255615!3d-34.689514800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc92d5b52629b%3A0x20942fb2319ec272!2sManuel%20Roseti%20860%2C%20B1768%20Villa%20Madero%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1674332273826!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-            <form>
-                <div>
-                    <input type="text" placeholder="Nombre" required>
-                </div>
-                <div>
-                    <input type="text" placeholder="Apellido" required>
-                </div>
-                <div>
-                    <input type="text" placeholder="Email" required>
-                </div>
-                <div>
-                    <input type="text" placeholder="Teléfono" required>
-                </div>
-                <div>
-                <textarea placeholder="Mensaje" name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar"><!--Boton de enviar-->
-                    <input type="reset" name="" id="" value="Limpiar"><!--Boton de limpiar-->
-                </div>
-            </form>
+            <div class="d-flex container justify-content-between"> 
+                <form action="#" target="" method="get" name="formDatosPersonales">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+                
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellido"/>
+                
+                    <label for="email" />Email</label>
+                    <input type="email" name="email" id="email" placeholder="email" required />
+                
+                    <label for="asunto">Asunto</label>
+                    <input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+                
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                    
+                    <input type="submit" name="enviar" value="enviar datos"/>
+                </form>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6209567075484!2d-58.50023688255615!3d-34.689514800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc92d5b52629b%3A0x20942fb2319ec272!2sManuel%20Roseti%20860%2C%20B1768%20Villa%20Madero%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1674332273826!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+ 
         </div>
     </main>    
     <footer class="piedepagina container-fluid d-flex justify-content-center ">     <!--PIE DE PAGINA , padre --> 

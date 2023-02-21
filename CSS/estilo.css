@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Rubik+Storm&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 *{
     /*reset*/
     margin: 0;
@@ -24,7 +25,7 @@
 }
 .logo{    
     width: 50%;
-    border-radius: 200px 200px 200px 200px;
+    border-radius: 200px 200px 200px 200px;     
     -webkit-border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     background: rgba(254,214,227,0.3);
@@ -136,11 +137,7 @@
 /*************************footer**********************************/
 .piedepagina{
     background-image: linear-gradient(120deg, #fdafc8 ,#fdafc8,#fed6e3);
-    font-family: 'Hubballi', cursive;    
-
-
-    
-
+    font-family: 'Hubballi', cursive; 
 }
 .hiperMovimiento{
     list-style-type: none;      
@@ -152,7 +149,7 @@
     font-size: 1rem;
 }
 .logo1{
-    width: 30%;
+    width: 20%;
     
 }
 
@@ -160,36 +157,148 @@
 
 
 /*******************************Galeria***************/
-/*Probando*/
-.galeriaimg{
-    height: 380px;
-    max-width: 100%;
-    padding: 1rem;
+
+
+
+.contenedor-galeria{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.galeria-img{
+    height: 220px;
+    width: 300px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    filter: brightness(100%);  
     border-radius: 28px 28px 28px 28px;
     -webkit-border-radius: 28px 28px 28px 28px;
     -moz-border-radius: 28px 28px 28px 28px;
+    border: 2px solid #ff6550;
+    transition: all 2s;
+    z-index: 1;
 }
-.galeria{
-    text-align: center;
-    font-size: 200%;
+.galeria-img:hover{
+    filter: brightness(110%) contrast(100%);    
+    width: 20%;
+    height: 20%;
+    transform: scale(1.5);
+    z-index: 10;
+    overflow:hidden;
+    align-self: center;
+    
+}
+.font-h1{
+    font-size: 3em;
+    font-family:'Great Vibes', cursive;
+    text-shadow: rgba(255, 255, 255, 0.634) 0 2px;
+
 }
 
-.h2{
-    text-align: center;
-
-}
-.colorcard{
-    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-}
 /**************************Nosotros*********************************/
 /**/
+.textoCentral{
+    font-family: 'Great Vibes', cursive;
+    font-size: 6em;
+    text-shadow: rgba(255, 255, 255, 0.634) 0 2px;
+}
 .parrafoNosotros{
-    font-size: 1em;
+    font-size: 1.5em;
+    color:#ffffff;
+    font-weight: bold;
+    
+
     }
+.textoCentral-Crea{
+        font-family:'Great Vibes', cursive;
+        font-size: 5em;
+        color:#ffffff;
+        text-shadow: #ff6550 0 2px;
+        
+    }
+.img-nosotros{
 
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.imag-hijo{
+    height: 220px;
+    width: 350px;
+    margin-bottom: 30px;
+    object-fit: contain;
+    filter: brightness(100%);    
 
+}
 
+.divVideo-nosotros{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter:brightness(60%);
 
+}
+/*****************************Contactos*************************/
+.fontCont{
+    font-size:5em;
+
+}
+form{
+	width:400px;
+    height: 450px;
+	padding:35px;
+	border-radius:10px;
+	margin:auto;
+	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#ff02b36f;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
 
 /***********************media queris*********************/
 @media screen and (min-width :768px) and (max-width :991px)/*table*/{
@@ -245,5 +354,10 @@
     }
     .logo1{
         width: 30%;
-}
+    }
+    .galeria-img:hover{ 
+        width: 50%;
+        height: 50%;    
+    
+    }
 }
