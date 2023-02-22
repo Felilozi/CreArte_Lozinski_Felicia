@@ -357,7 +357,7 @@ textarea{
     .galeria-img:hover{
         filter: brightness(110%) contrast(100%);    
     
-        transform: scale(1.5);
+        transform: scale(1.2);
         z-index: 2;
         overflow:hidden;
         
