@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CreArte 
+    Trabajos en cerámica, vidrio, madera
+    Opciones para regalar o regalarse">
+    <meta name="keywords" content="REGALOS,CERAMICA,VIDRIOS,DISEÑO,COPAS,ARTE,ARTESANIA,TAZAS,PLATOS,TODOLOQUENECESITES,AMOR,MATE,KITS,FAMILIA,AMIGOS">
     <title>CreArte - index</title>
     <link rel="icon" href="../favicon.ico">
     <script src="https://kit.fontawesome.com/c163fcbb70.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 <body>
-<!-- Esto es un comentario
-    La pagina aun no esta completa -->
-    <header  class="container-fluid cabeza d-flex  justify-content-center  " >     <!--cabecera de la pagina --> 
-        <a class="padreLogo " href="../index.html"><img class="logo" src="../assets/img/LOGO DE CREARTE.jpg" alt="LOGO"></a>                                                
-        <nav class=" navbar navbar-expand-lg navbar-light "><!--padre-->
+<!-- HEADER -->
+    <header  class="container-fluid cabeza d-flex  justify-content-center " >     <!--cabecera de la pagina --> 
+        <a class="padreLogo p-1" href="../index.html"><img class="logo" src="../assets/img/LOGO DE CREARTE.jpg" alt="LOGO"></a>  <!--LOGO-->                                              
+        <nav class=" navbar navbar-expand-lg navbar-light justify-content-center align-self-center">
                 
             <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
+            </button><!--ACA SE ENCUENTRA EL BOTON DE  HAMBURGUESA-->
+            <!--NAVEGACION-->
         <ul class="nav navbar-collapse" id="navbarNav">
             <li class="nav-item">
                 <a class="colornav nav-link active" href="../index.html">Home</a></li>
@@ -38,40 +42,54 @@
     </header >
     <main class=" d-flex flex-column container-fluid"><!--contenido principal de la pagina -->
 
-            <div class="container ">
-                <video autoplay muted loop class="divVideo">
+            <div class="container "><!--FONDO DEL MAIN VIDEO -->
+                <video autoplay muted loop class="divVideo-nosotros">
                     <source src="../assets/video/video1.mp4" type="video/mp4">
                     
                     </video>
             </div>
-            <div>
-                        <h1>Información importante respecto a la compra de cada articulo</h1>
-        <p> Estimado cliente le comunicamos que por el momento nuestra pagina no están habilitada para la compra
-            de artículos si desea comprar algún articulo que ve en la galería lo estaremos vendiendo en nuestra pagina de Intagram como de 
-            Facebook o Whatsapp
-        </p>
-        <h2>Pautas a seguir si desea comprar</h2>
-        <ul>
-            <li>Siempre hablar con respecto, ante todo </li>
-            <li>Señalar el producto que dese comprar</li>
-            <li>No se puede modificar el diseño pautado una vez que te avisemos que estamos haciendo tu pedido</li>
-            <li>La demora del pedido es de 3 días aproximadamente.</li>
-            <li>Los trabajos se realizan con seña previa </li>            
-            <li>Te avisaremos cuando tu pedido este listo para que pases a retirar </li>
+            <div><!--iNFORMACIONES DE LA PAGINA-->
 
-            
-        </ul>
+        <h1 class="font-h1 color text-center p-3">Información</h1>
         
-        <h2>Desde ya muchas gracias por confiar en nosotros y nuestros articulo!</h2>
-    
+        <p class="parrafoNosotros text-center"> Estimado cliente le comunicamos que por el momento nuestra pagina no están habilitada para la compra
+            de artículos</p>
+        <p class="parrafoNosotros text-center"> Si desea comprar algún artículo que vea en la galería lo estaremos vendiendo tanto en nuestra página de Instagram como de 
+            Facebook o por Whatsapp</p> 
+        </p>
+        <div class=" container d-flex row  ms-lg-5">
+            <h2 class="parrafoNosotros text-center ">Pautas a seguir si desea comprar</h2>
+                <ul class="parrafoNosotros   ">
+                    <li>Siempre hablar con respecto, ante todo </li>
+                    <li>Señalar el producto que desee comprar</li>
+                    <li>No se puede modificar el diseño pautado una vez que te avisemos que estamos haciendo tu pedido</li>
+                    <li>La demora del pedido es de 3 días aproximadamente.</li>
+                    <li>Los trabajos se realizan con seña previa </li>            
+                    <li>Te avisaremos cuando tu pedido esté listo para que pases a retirar </li>
+
+                    
+                </ul>
+        </div>
+        
+        <h2 class="parrafoNosotros text-center">Desde ya muchas gracias por confiar en nosotros y nuestros productos!</h2>
+        <div class=" img-nosotros flex-contactos   container"><!--IMAGENES-->
+            <div class=" ">
+                    <img src="../assets/img/tazaeditada.jpeg" alt="TABLA" class=" imag-hijo ">
+            </div> 
+                <div class=" ">
+                    <img src="../assets/img/kit.jpeg" alt="" class='imag-hijo '>
+                </div>   
+                
+                
+            </div>
 
             </div>
 
     </main>
-    <footer class="piedepagina container-fluid d-flex justify-content-center ">     <!--PIE DE PAGINA , padre --> 
+    <footer class="piedepagina container-fluid d-flex justify-content-center ">     <!--PIE DE PAGINA --> 
         <section class="container row align-items-center  ">
-                <ul  class=" hiperMovimiento col-sm-3 ">  <!--A esto le falta iconos -->
-            <li><a class="hipervinculoFoot" href="../index.html">Home</a></li>
+                <ul  class=" hiperMovimiento   col-sm-3 "> <!--NAVEGACION-->
+            <li><a class="hipervinculoFoot " href="../index.html">Home</a></li>
             <li><a class="hipervinculoFoot" href="./galeria.html">Galeria</a></li>
             <li><a class="hipervinculoFoot" href="./nosotros.html">Nosotros</a></li>
             <li><a class="hipervinculoFoot" href="./contactos.html">Contactos</a></li>            

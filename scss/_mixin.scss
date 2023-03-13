@@ -1,0 +1,61 @@
+@mixin flex-center($direccion,$justify){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+
+}
+@mixin flex-justify-align_iten($justify,$align){
+    display: flex;
+    justify-content:$justify;
+    align-items: $align;
+
+}
+@mixin flex-justify-align_content($justify,$align){
+    display: flex;
+    justify-content:$justify;
+    align-content: $align;
+
+}
+
+    
+@mixin redes($nombre){
+    @if $nombre == instagram{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+                
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    @else if $nombre == facebook{
+        background: radial-gradient(circle at 30% 107%, #3d9810 0%, #a097fd 5%, #1500ff 45%, #1500ff 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+                
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+    @else if $nombre == whatsapp{
+        background: radial-gradient(circle at 30% 107%, #20af54 0%, #20af54 5%, #20af54 45%, #20af54 60%, #20af54 90%);
+        -webkit-background-clip: text;
+        
+                
+                background-clip: text;
+        -webkit-text-fill-color:#20af54;
+
+    }
+
+}
+@mixin width-height($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin list-style-text-decoration-none(){
+    list-style-type: none;      
+    text-decoration: none; 
+}
+@mixin texto-tamanho-shadow($texto,$tamanho,$shadow){
+    font-family:$texto;
+    font-size: $tamanho;
+    text-shadow:$shadow;
+}
+

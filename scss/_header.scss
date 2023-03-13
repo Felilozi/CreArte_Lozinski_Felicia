@@ -1,0 +1,26 @@
+/*********************header***************************/
+.cabeza{
+    background-color:#FC88AC;  
+    font-family: 'Hubballi', cursive;
+    height: 24%;
+    .padreLogo{
+        width: 10%;
+        height: 45%;        
+    }
+    .colornav{
+                color:rgb(255, 255, 255); 
+                font-weight: bold;
+                font-size: 180%;
+            }
+    
+
+}
+.logo{    
+    width: 100%;
+    border-radius: 200px 200px 200px 200px;     
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    background: rgba(254,214,227,0.3);
+    border: 3px solid #fed6e3;  
+    }
+

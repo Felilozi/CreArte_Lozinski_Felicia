@@ -1,0 +1,27 @@
+/*Colores que uso en todas las paginas*/
+.color{
+    color:map-get($map-colores, rosa );    
+
+}
+.colorBlanco{
+    color:map-get($map-colores, azure );
+}
+
+
+/*fuentes que uso en las paginas*/
+.parrafoUno{
+    font-size: 2.3em;
+}
+.font-h1{
+    @include texto-tamanho-shadow($font-texto,6.7rem,map-get($map-colores,shadow-gris));
+
+
+}
+.parrafoNosotros{
+    font-size: 1.5em;
+    color:#ffffff;
+    font-weight: bold;    
+
+}
+
+

@@ -1,0 +1,33 @@
+/*******************************Galeria***************/
+
+
+
+.contenedor-galeria{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    .galeria-img{
+        height: 220px;
+        width: 335px;
+        margin-bottom: 30px;
+        object-fit: cover;
+        filter: brightness(100%);  
+        border-radius: 28px 28px 28px 28px;
+        -webkit-border-radius: 28px 28px 28px 28px;
+        -moz-border-radius: 28px 28px 28px 28px;
+        
+        transition: all 2s;
+        z-index: 1;
+    }
+}
+
+.galeria-img:hover{
+    filter: brightness(110%) contrast(100%);    
+
+    transform: scale(1.5);
+    z-index: 2;
+    overflow:hidden;
+    
+    
+}
+

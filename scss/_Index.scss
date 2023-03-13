@@ -1,0 +1,75 @@
+/*****************************index main*********************************/
+
+.divVideo{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter:brightness(100%);
+
+}
+
+/**Galeria inicio**/
+.imgInicio{
+    @include flex-justify-align_iten(center,center);
+    @include width-height(85%,40vh);
+    margin: 0 auto;
+    background: #0000001b;
+    border-radius: 18px 18px 18px 18px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border: 5px outset rgba(255,158,162,0.99);
+    .cImg{
+        width: 0%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.7;
+        transition: .5s ease;
+        
+    }
+
+
+}
+.imgInicio Img:hover{
+    width: 15%;
+    opacity: 1;
+    filter:contrast(120%)
+}
+
+/*2da parte de index*/
+.centrar-section2{
+    @include flex-justify-align_content(center,center)
+}
+.contenedor_centrado {
+    @include flex-center($flex-direccion-row,$justify-center);
+    font-size: 60px; 
+
+
+    .hipervinculo1{
+        
+        @include list-style-text-decoration-none();
+        
+    }
+
+    .insta {
+
+        @include redes(instagram);
+        
+        
+    }
+    .face{
+
+        @include redes(facebook);
+        
+    }
+    .whasa{
+
+        @include redes(whatsapp); 
+        
+    }
+
+}

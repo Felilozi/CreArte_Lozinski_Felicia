@@ -1,0 +1,41 @@
+.icon{
+    display: inline-block; /*Makes the icons inline block level elements. This will let us animate the transform property.*/ 
+    font-size: 44px;
+    animation: float infinite 4s ease-in-out ; 
+    /*Applies the float keyframe animation over 5s and makes it run infinitely.*/
+    /*  
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 5s;*/
+}
+.fa-instagram{
+    /*background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* This is the first item so no animation delay needed.*/
+}
+
+.fa-facebook{
+    /*color: #1877f2;*/
+    animation-delay: 0.5s; /*Adds a animation delay of 1 seconds.*/
+}
+
+.fa-whatsapp{
+    /*color: #25d366;*/
+    animation-delay: 1s; /*Adds a animation delay of 2 seconds.*/
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50%{
+        transform: translateY(-25px); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100%{
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}

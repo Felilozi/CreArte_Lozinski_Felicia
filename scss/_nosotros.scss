@@ -1,0 +1,41 @@
+/**************************Nosotros*********************************/
+/**/
+.divVideo-nosotros{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter:brightness(60%);
+
+}
+.textoCentral{
+    @include texto-tamanho-shadow($font-texto,6em,map-get($map-colores,shadow-gris));
+
+}
+
+
+.textoCentral-Crea{
+    @include texto-tamanho-shadow($font-texto,5em,map-get($map-colores,shadow-rosa));
+    color:#ffffff;
+
+}    
+
+.img-nosotros{
+
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    .imag-hijo{
+        height: 220px;
+        width: 350px;
+        margin-bottom: 30px;
+        object-fit: contain;
+        filter: brightness(100%);    
+    
+    }
+}
+
+
