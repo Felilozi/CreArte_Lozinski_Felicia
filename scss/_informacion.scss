@@ -1,0 +1,26 @@
+/*****************************informacion*************************/
+.img-nosotros{
+
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    .imag-hijo{
+        height: 220px;
+
+        margin-bottom: 30px;
+        object-fit: contain;
+        filter: brightness(100%);    
+    
+    }
+}
+
+
+.imag-hijo:hover{
+    filter: brightness(110%) contrast(100%);    
+
+    transform: scale(1.2);
+    z-index: 1;
+    overflow:hidden;
+    
+    
+}

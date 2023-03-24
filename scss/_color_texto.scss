@@ -25,4 +25,8 @@
 
 }
 
+.fuenteLogo{
+    color:#ffffff;
+    @include texto-tamanho-shadow($font-texto, 2.5rem,map-get($map-colores,shadow-negro));
+}
 

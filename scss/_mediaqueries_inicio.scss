@@ -1,10 +1,10 @@
 /***********************media queris*********************/
-@media screen and (min-width :768px) and (max-width :991px)/*table*/{
+@media screen and (max-width: 700px) /*table*/{
     .cabeza{
         .padreLogo{
-            width: 90%;
+            width: 23%;
             margin: 5%;
-            background-color: green;
+            
             .logo{    
                 width:100%;        
             }   
@@ -73,8 +73,21 @@
         
         }
 
+
+    .imag-hijo-nosotros{
+            height: 300px;
+            width: 200px;
+        
+            object-fit: contain;
+            filter: brightness(100%); 
+        }
+        .margen-0{
+            display: flex !important;
+            justify-content: center !important;
+        }
+
 }
-@media screen and (min-width: 0) and (max-width:768px) /*celular*/{
+@media screen and (min-width: 0) and (max-width:768px){ 
     .cabeza{
         .padreLogo{
             width: 25%;
@@ -117,14 +130,10 @@
         width: 30%;
     }
     /*galeria*/
-    
-    .galeria-img:hover{
 
-    
-        transform: scale(1.2);
+    .imagen-clik{
 
-        
-
+        width: 70%;
     }
     /***Contactos***/
     .flex-contactos{
@@ -184,19 +193,44 @@
         
     }
     /*nosotros-informacion imagen*/
+    .imag-hijo-nosotros{
+        height: 400px;
+        width: 250px;
+    
+        object-fit: contain;
+        filter: brightness(100%); 
+    }
     .img-nosotros{
 
         width: 100%;
         max-width: 90%;
         margin: 0 auto;
+        text-align: center;
         .imag-hijo{
             height: 200px;
-            width: 290px;
+            
             margin-bottom: 30px;
             object-fit: contain;
             filter: brightness(100%);    
         
         }
+    }
+    .imag-hijo-nosotros{
+        height: 50%;
+        width: 100%;
+        object-fit: contain;
+        filter: brightness(100%); 
+        
+    }
+    .foto1 {
+
+        width: 60%;
+        
+    }
+    .margen-0{
+        display: flex !important;
+        justify-content: center !important;
+        
     }
 }
 

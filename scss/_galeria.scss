@@ -4,7 +4,8 @@
 
 .contenedor-galeria{
     width: 100%;
-    max-width: 90%;
+    /*max-width: 90%;*/
+    overflow: hidden;
     margin: 0 auto;
     .galeria-img{
         height: 220px;
@@ -18,16 +19,20 @@
         
         transition: all 2s;
         z-index: 1;
+        
     }
+
 }
 
-.galeria-img:hover{
-    filter: brightness(110%) contrast(100%);    
 
-    transform: scale(1.5);
-    z-index: 2;
-    overflow:hidden;
+.margen-0:hover{
+    cursor:zoom-in;
+}
+
+.imagen-clik{
     
-    
+    width: 100%;
+
+    margin:auto;
 }
 

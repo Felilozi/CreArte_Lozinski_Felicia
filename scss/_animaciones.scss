@@ -1,3 +1,7 @@
+.contenedor_animacion{
+overflow: hidden;
+}
+
 .icon{
     display: inline-block; /*Makes the icons inline block level elements. This will let us animate the transform property.*/ 
     font-size: 44px;

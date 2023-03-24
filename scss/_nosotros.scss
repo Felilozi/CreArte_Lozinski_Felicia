@@ -11,6 +11,10 @@
     filter:brightness(60%);
 
 }
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
 .textoCentral{
     @include texto-tamanho-shadow($font-texto,6em,map-get($map-colores,shadow-gris));
 
@@ -22,20 +26,25 @@
     color:#ffffff;
 
 }    
+.imag-hijo-nosotros{
+    height: 50%;
+    width: 40%;
+    object-fit: contain;
+    filter: brightness(100%); 
+    
+}
+.foto1 {
 
-.img-nosotros{
+    width: 30%;
+    
+}
 
+.margen-hijo-nosotros{
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
-    .imag-hijo{
-        height: 220px;
-        width: 350px;
-        margin-bottom: 30px;
-        object-fit: contain;
-        filter: brightness(100%);    
-    
-    }
+
 }
+
 
 
