@@ -479,6 +479,9 @@ textarea {
     filter: brightness(100%); }
   .foto1 {
     width: 60%; }
-  .margen-0 {
-    display: flex !important;
-    justify-content: center !important; } }
+  /*
+    .margen-0{
+        display: flex !important;
+        justify-content: center !important;
+        
+    }*/ }
