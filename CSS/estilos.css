@@ -204,6 +204,11 @@
     transition: all 2s;
     z-index: 1; }
 
+.flexdegaleria {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
 .margen-0:hover {
   cursor: zoom-in; }
 

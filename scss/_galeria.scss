@@ -23,7 +23,18 @@
     }
 
 }
+@mixin flex-justify-align_content($justify,$align){
+    display: flex;
+    justify-content:$justify;
+    align-content: $align;
 
+}
+
+.flexdegaleria{
+    @include flex-justify-align_content(center,center);
+    
+    
+}
 
 .margen-0:hover{
     cursor:zoom-in;
@@ -35,4 +46,5 @@
 
     margin:auto;
 }
+
 
